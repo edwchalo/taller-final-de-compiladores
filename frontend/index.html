@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniCompiler Web</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>MiniCompiler Web</h1>
+        <p>Compilador educativo para MiniLang</p>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel editor-panel">
+        <div class="panel-header">
+          <h2>Editor</h2>
+          <span class="hint">MiniLang</span>
+        </div>
+        <label class="sr-only" for="source">Código fuente</label>
+        <textarea id="source" spellcheck="false"></textarea>
+        <div class="actions">
+          <button id="compile-btn" class="btn-primary" type="button">Compilar</button>
+          <button id="clear-btn" class="btn-secondary" type="button">Limpiar</button>
+        </div>
+        <p id="global-status" class="global-status" hidden></p>
+      </section>
+
+      <section class="results" id="results">
+        <article class="card" data-phase="lexical">
+          <h2>1. Tokens</h2>
+          <div class="card-body">Esperando compilación.</div>
+        </article>
+        <article class="card" data-phase="syntax">
+          <h2>2. Análisis sintáctico</h2>
+          <div class="card-body">Esperando compilación.</div>
+        </article>
+        <article class="card" data-phase="semantic">
+          <h2>3. Análisis semántico</h2>
+          <div class="card-body">Esperando compilación.</div>
+        </article>
+        <article class="card" data-phase="intermediate">
+          <h2>4. Código intermedio</h2>
+          <div class="card-body">Esperando compilación.</div>
+        </article>
+        <article class="card" data-phase="optimization">
+          <h2>5. Código optimizado</h2>
+          <div class="card-body">Esperando compilación.</div>
+        </article>
+        <article class="card" data-phase="assembly">
+          <h2>6. Código ensamblador</h2>
+          <div class="card-body">Esperando compilación.</div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
